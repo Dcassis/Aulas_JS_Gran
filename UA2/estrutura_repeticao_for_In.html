@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Repetição - For..In</title>
+
+    <script>
+
+     const pessoa= {
+        nome: 'Daniel',
+        telefone: '(79) 99941-1819',
+        endereço: 'Rua 1'
+     }
+
+     
+     console.log(pessoa.nome)
+     console.log(pessoa['nome'])
+     
+     // FOR IN para navegar em um objeto
+     
+    /*     for(let atributo in pessoa){
+         console.log(atributo + ' = ' + pessoa[atributo]) 
+        }*/
+
+        const carros = ['Gol', 'Fusca', 'Virtus', 'Ka']
+        console.log(carros[0])
+        for(let elemento of carros){
+            console.log(elemento)
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

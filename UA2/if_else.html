@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else</title>
+
+    <script>
+
+        function media(){
+
+            const n1 = document.getElementById('n1').value
+            const n2 = document.getElementById('n2').value
+            const n3 = document.getElementById('n3').value
+            const n4 = document.getElementById('n4').value
+            const media = (Number(n1) + Number(n2) + Number(n3) + Number(n4) )/4
+            let resultado 
+            if(media >= 7){
+                document.getElementById('resultado').innerHTML = "Aluno Aprovado com média " + media.toFixed(2)
+            } else if(media >=5){
+                document.getElementById('resultado').innerHTML = "Aluno em Recuperação com média " + media.toFixed(2)
+            }   else{
+                document.getElementById('resultado').innerHTML = "Aluno Reprovado com média " + media.toFixed(2)
+                }
+            }
+        
+
+
+        function limparDados(){ 
+            document.getElementById('n1').value = ""
+            document.getElementById('n2').value = ""
+            document.getElementById('n3').value = ""
+            document.getElementById('n4').value = ""
+            document.getElementById('resultado').innerHTML = ""
+            
+        }
+
+    </script>
+</head>
+<body>
+    N1: <input type="text" id="n1" valeu="n1"><br>
+    N2: <input type="text" id="n2" valeu="n2"><br>
+    N3: <input type="text" id="n3" valeu="n3"><br>
+    N4: <input type="text" id="n4" valeu="n4"><br>
+    <input type="button" value="Calcular a média" onclick="media()">
+    <input type="button" id="limparDados" value="Limpar" onclick="limparDados()">
+    <h1 id="resultado"></h1>
+
+</body>
+</html>

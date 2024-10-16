@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Repetição - While/ Do While</title>
+
+    <script>
+
+       /* DO WHILE - ele executa a ação até a condição ser vendadeira
+        SINTAXE:
+        do{
+            Ação
+        }while(condição)
+        */
+
+        let contador = 1;
+        let soma = 0;
+        let nota;
+
+        do {
+            nota = Number(prompt('Digite a nota ' + contador + ' (ou -1 para sair):'));
+            if (nota !== -1) {
+                soma += nota;
+                contador++;
+            }
+        } while (nota !== -1);
+
+        let media = soma / (contador - 1);
+        document.write('A média das notas é: ' + media.toFixed(2));
+
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

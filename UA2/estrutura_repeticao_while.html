@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Repetição - While/ Do While</title>
+
+    <script>
+
+        /* WHILE sintaxe:
+        while(condição){
+            incremento
+        }
+        */
+
+
+        let contador = 1
+        const qtd = prompt('Quantas notas?')
+        let soma = 0
+        let nota = 0
+        while(contador <= qtd){
+            nota = Number(prompt('Digite a nota:' + contador))
+            soma = (soma + nota)
+            contador ++
+        }
+        let media = soma/qtd
+        document.write('A média final do aluno foi: ' + media.toFixed(1).replace('.', ',') + '<br>') 
+
+        const resultado = media >= 7 ? 'Aluno Aprovado' : 
+                            media >= 5 ? 'Aluno em  Recuperação': 'Aluno Reprovado'
+        document.write(resultado)
+
+      
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

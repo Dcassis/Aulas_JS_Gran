@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+  
+</head>
+<body>
+   <h1 id="resultado"></h1>
+   <input type="button" value="Limpar Tela" onclick='limpar()'>
+
+    <script>
+    let salario = Number(prompt('Digite o seu atual salário'))
+    let cargo = prompt('Digite o seu cargo: ')
+    let aumento = 0
+    
+    switch(cargo){
+        case 'Estagiário':
+        aumento = 0.1;
+        break;
+        case 'Analista':
+        aumento = 0.08;
+        break;
+        case 'Gerente':
+        aumento = 0.057;
+        break;          
+        case 'Presidente':
+        aumento = 0.045;
+        break;
+        default: alert('Favor escolher um cargo válido!')
+    }
+    
+    newSalary = ((salario * aumento) + salario).toFixed(2)
+
+    const resultado = document.getElementById('resultado').innerHTML = 'O seu cargo é ' + cargo  +'.' + ' O seu novo salário passa a ser ' + 'R$ ' + newSalary+'.'
+    
+    function limpar(){
+        document.getElementById('resultado').innerHTML = ''
+    }
+    </script>
+</body>
+</html>

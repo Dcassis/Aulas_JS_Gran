@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Repetição - For</title>
+
+    <script>
+
+       // inicialização
+       // condição
+       // incremento
+
+    //exemplo 1:
+    for(let contador = 1; contador <= 5; contador++){
+    console.log(contador)
+    }
+
+    // exemplo 2:
+    const qtd = prompt('Quantas notas?')
+    let nota = 0
+    let soma = 0
+
+    for(let contador = 1; contador <= qtd; contador++){
+    nota = Number(prompt('Digite a nota ' + contador))
+    soma = soma + nota
+}
+    media = soma/qtd 
+    console.log('A média final é: ' + media)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
